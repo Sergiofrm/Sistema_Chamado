@@ -1,7 +1,8 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
+import 'firebase/firestore'
 
-let firebaseConfig = {
+let fireBaseConfig = {
   apiKey: 'AIzaSyD0xJ_WqwcddljRjk0VzzV8rkVtBtQDYPE',
   authDomain: 'chamado-19f4a.firebaseapp.com',
   projectId: 'chamado-19f4a',
@@ -12,7 +13,7 @@ let firebaseConfig = {
 }
 
 if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig)
+  firebase.initializeApp(fireBaseConfig)
 }
 
 export default firebase
